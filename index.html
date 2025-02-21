@@ -1,0 +1,32 @@
+<!--
+ * @Description: 
+ * @Author: yebanban
+ * @Date: 2025-02-19 18:26:27
+ * @LastEditTime: 2025-02-21 01:39:56
+ * @LastEditors: yebanban
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="utils.js"></script>
+<script>
+    const segmentTree = new SegmentTree([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], (a, b) => a + b)
+    console.log(segmentTree.tree)
+    console.log(segmentTree.query(0, 5))
+    console.log(segmentTree.add(2, 4, 20))
+    console.log(segmentTree.query(3, 5))
+    console.log(segmentTree.query(4, 5))
+    console.log(segmentTree.query(4, 4))
+    console.log(segmentTree.tree)
+</script>
+
+<body>
+
+</body>
+
+</html>
